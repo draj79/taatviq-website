@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TaatvIQ</title>
+        <link rel="icon" type="image/png" href="/assets/image/favicon.png">
+        <link rel="stylesheet" href="/styles.css">
+        <!-- Slick Carousel CSS -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <!-- Slick Theme (Optional) -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+        <!-- Font Awesome for Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <script src="/utils.js"></script>
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <div class="navbar">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="/"><img src="/assets/image/taatviq_name_black.png" alt="Logo"></a>
+            </div>
+            <!-- Navigation links -->
+            <div class="nav-items">
+
+                <!-- Taatviq dropdown -->
+                <div class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">TaatvIQ</a>
+                    <div class="dropdown-content">
+                        <a href="/index.html?section=motivation">Motivation & Vision</a>
+                        <a href="/about/index.html?section=aboutus">About Us</a>
+                    </div>
+                </div>
+
+                <!-- Single Product link with dropdown -->
+                <div class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Products</a>
+                    <div class="dropdown-content">
+                        <a href="/products/index.html?product=spark&section=product-section">TaatvIQ Spark</a>
+                        <a href="/products/index.html?product=vision&section=product-section">TaatvIQ Vision</a>
+                        <a href="/products/index.html?product=quantum&section=product-section">TaatvIQ Quantum</a>
+                    </div>
+                </div>
+
+                <!-- Demo dropdown -->
+                <div class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Demo</a>
+                    <div class="dropdown-content">
+                        <a href="/demo/index.html?section=analytics">Analytics</a>
+                    </div>
+                </div>
+
+                <a href="/contact/index.html?section=contact">Contact Us</a>
+            </div>
+        </div>      
+
+        <section id="product-section" class="product-showcase"> 
+            <div>
+                <div class="product-introduction">
+                    <p>
+                        TaatvIQ offers a progressive suite of AI-driven products designed to meet businesses at 
+                        every stage of their data maturity journey — from establishing reliable data pipelines 
+                        to enabling autonomous decision-making. Whether you're looking to build foundational analytics, 
+                        harness machine learning for predictive insights, or deploy advanced generative AI for 
+                        enterprise-wide intelligence, TaatvIQ’s product lineup scales with your ambition. 
+                        Explore our offerings below to discover the right intelligence layer for your business.
+                    </p>
+                </div>
+            </div>
+
+            <div class="product-buttons">
+                <button data-product="spark" onclick="showProduct('spark')" class="active">TaatvIQ Spark</button>
+                <button data-product="vision" onclick="showProduct('vision')">TaatvIQ Vision</button>
+                <button data-product="quantum" onclick="showProduct('quantum')">TaatvIQ Quantum</button>
+            </div>
+        
+            <div class="product-display">
+                <div class="product-image">
+                    <img id="product-img" src="/assets/image/spark.png" alt="TaatvIQ Spark">
+                </div>
+                <div class="product-description" id="product-desc"> <!--  showcase -->
+                    <h2>TaatvIQ Spark</h2>
+                    <p>TaatvIQ Spark is the foundational offering in the TaatvIQ product suite, designed as an 
+                        easy entry point for organizations beginning their data intelligence journey. It provides 
+                        core capabilities for data ingestion, handling, management, and storage, enabling businesses 
+                        to establish a clean, scalable data pipeline with minimal friction.
+                        Spark includes an intuitive analytics layer that translates raw data into meaningful insights, 
+                        empowering businesses to identify inefficiencies, fix operational issues, and boost productivity. 
+                        With built-in alerting and reporting features, Spark ensures stakeholders are continuously informed 
+                        and ready to act on emerging trends or anomalies.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="logo2">
+                <a href="/"><img src="/assets/image/logo1.png" alt="Logo"></a>
+            </div>
+            <hr style="width: 30%; border: none; height: 1.5px; background-color: #cccccc; margin: 25px auto;">
+            <p>&copy; 2025 TaatvIQ AI Private Limited. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
