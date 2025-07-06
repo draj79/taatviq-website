@@ -87,64 +87,6 @@ function scrollToSectionAfterLayout(sectionId, offset = 100) {
     }
   });
   
-
-// Auto-trigger showProduct if product param is present in URL
-// window.onload = () => {
-//     const params = new URLSearchParams(window.location.search);
-  
-//     // Scroll to section after full page load
-//     const section = params.get('section');
-//     if (section) {
-//       const el = document.getElementById(section);
-//       if (el) {
-//         el.scrollIntoView({ behavior: 'smooth' });
-//       }
-//     }
-  
-//     // Show product only on products page
-//     const product = params.get('product');
-//     if (product && typeof products !== 'undefined' && products[product]) {
-//       showProduct(product);
-//       const matchingBtn = document.querySelector(`.product-buttons button[data-product="${product}"]`);
-//       if (matchingBtn) {
-//         matchingBtn.classList.add('active');
-//       }
-//     }
-//   }; 
-
-
-// window.addEventListener('load', () => {
-//     const params = new URLSearchParams(window.location.search);
-//     const sectionId = params.get('section');
-  
-//     if (sectionId) {
-//       const targetEl = document.getElementById(sectionId);
-  
-//       if (targetEl) {
-//         // Wait for 100ms to ensure layout is settled
-//         setTimeout(() => {
-//           const yOffset = -80; // adjust for fixed header height
-//           const y = targetEl.getBoundingClientRect().top + window.scrollY + yOffset;
-  
-//           window.scrollTo({
-//             top: y,
-//             behavior: 'smooth'
-//           });
-//         }, 100);
-//       }
-//     }
-  
-//     // Products page logic (optional)
-//     const product = params.get('product');
-//     if (product && typeof products !== 'undefined' && products[product]) {
-//       showProduct(product);
-//       const matchingBtn = document.querySelector(`.product-buttons button[data-product="${product}"]`);
-//       if (matchingBtn) {
-//         matchingBtn.classList.add('active');
-//       }
-//     }
-//   });
-
 function navigateTo(sectionId, productKey = null) {
     localStorage.setItem('taatviq_scroll_to', sectionId);
     if (productKey) {
