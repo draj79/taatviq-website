@@ -500,17 +500,17 @@ html {
   .dropdown-content {
     position: static; /* Don't float it on small screens */
     box-shadow: none;
-    background-color: transparent;
+    background-color: #000000;
     padding-left: 12px;
   }
 
   .dropdown-content a {
     font-size: 14px;
-    padding: 6px 12px;
+    padding: 12px;
   }
 
   body {
-    padding-top: 100px;
+    padding-top: 140px;
   }
 
   .product-display {
