@@ -511,7 +511,12 @@ html {
   }
 
   body {
-    padding-top: 140px;
+    padding-top: 170px;
+  }
+
+  .logo img {
+    height: 80px;
+    width: auto;
   }
 
   .product-display {
