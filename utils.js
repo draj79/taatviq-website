@@ -1,3 +1,5 @@
+const baseUrl = 'https://www.taatviqai.com/';
+
 const products = {
     spark: {
         img: 'https://draj79.github.io/taatviq-website/assets/image/spark.png',
@@ -12,7 +14,7 @@ const products = {
             'and ready to act on emerging trends or anomalies.'
     },
     vision: {
-        img: 'assets/image/vision.png',
+        img: baseUrl + 'assets/image/vision.png',
         title: 'TaatvIQ Vision',
         desc: 'TaatvIQ Vision is the next evolution beyond Spark, designed for businesses ready to transform ' +
             'raw analytics into predictive and prescriptive intelligence. Building on robust data management and analytics ' +
@@ -24,7 +26,7 @@ const products = {
             'manual analysis and enabling faster response to emerging opportunities or risks.'
     },
     quantum: {
-        img: 'assets/image/quantum.png',
+        img: baseUrl + 'assets/image/quantum.png',
         title: 'TaatvIQ Quantum',
         desc: 'TaatvIQ Quantum is the pinnacle of the TaatvIQ suite, designed for enterprises seeking cutting-edge ' +
             'intelligence at scale. Going beyond predictive analytics and operational automation, Quantum leverages ' +
