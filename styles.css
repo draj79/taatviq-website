@@ -476,46 +476,37 @@ html {
 
 @media (max-width: 768px) {
   .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-    background-color: white;
-    padding: 10px;
     flex-direction: column;
     align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+    position: relative;
   }
 
   .nav-items {
-    display: flex;
     flex-direction: column;
+    align-items: flex-start;
     width: 100%;
-    overflow-y: auto;
-    max-height: 80vh;
+    gap: 10px;
   }
 
-  .nav-items a,
+  .navbar .nav-items a,
   .dropbtn {
-    display: block;
-    width: 100%;
-    padding: 10px;
     font-size: 16px;
-    box-sizing: border-box;
+    padding: 8px 12px;
+    width: 100%;
   }
 
   .dropdown-content {
-    position: static; /* Don't use absolute positioning on mobile */
-    background-color: white;
-    width: 100%;
+    position: static; /* Don't float it on small screens */
     box-shadow: none;
-    border-top: 1px solid #ccc;
+    background-color: transparent;
+    padding-left: 12px;
   }
 
   .dropdown-content a {
     font-size: 14px;
-    padding: 8px 12px;
-    display: block;
+    padding: 6px 12px;
   }
 
   body {
@@ -534,14 +525,14 @@ html {
     padding: 10px;
   }
 
-  .hero {
+/*   .hero {
     flex-direction: column;
     padding: 2rem 1rem;
   }
 
   .hero-text h1 {
     font-size: 2rem;
-  }
+  } */
 
   section {
     scroll-margin-top: 100px;
