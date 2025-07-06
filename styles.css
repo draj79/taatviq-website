@@ -199,7 +199,7 @@ html {
     z-index: 0;
 } */
 
-/* @media (max-width: 900px) {
+@media (max-width: 900px) {
     .hero {
       flex-direction: column;
       text-align: center;
@@ -212,7 +212,7 @@ html {
     .hero-text {
       text-align: justify;
     }
-  } */
+  }
 
 .hero-text {
     flex: 1;
@@ -473,79 +473,7 @@ html {
 }
 
 /* New changes 2nd July 2025 */
-
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
-    gap: 10px;
-    position: relative;
-  }
-
-  .nav-items {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    gap: 10px;
-  }
-
-  .navbar .nav-items a,
-  .dropbtn {
-    font-size: 16px;
-    padding: 8px 12px;
-    width: 100%;
-  }
-
-  .dropdown-content {
-    position: static; /* Don't float it on small screens */
-    box-shadow: none;
-    background-color: #000000;
-    padding-left: 12px;
-  }
-
-  .dropdown-content a {
-    font-size: 14px;
-    padding: 12px;
-  }
-
-  .logo img {
-    height: 100px;
-    width: auto;
-  }
-
-  body {
-    padding-top: 250px;
-  }
-  
-  .product-display {
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-  }
-
-  .product-image, .product-description {
-    width: 100%;
-    max-width: 97%;
-    padding: 5px;
-  }
-
-/*   .hero {
-    flex-direction: column;
-    padding: 2rem 1rem;
-  }
-
-  .hero-text h1 {
-    font-size: 2rem;
-  } */
-
-  section {
-    scroll-margin-top: 100px;
-  }
-}
-
-/* @media (max-width: 768px) {
     .navbar {
       flex-direction: column;
       align-items: flex-start;
@@ -575,7 +503,7 @@ html {
       font-size: 14px !important;
       padding: 8px 12px;
     }
-} */
+}
 
 .navbar {
     position: fixed;
@@ -612,7 +540,7 @@ html {
     margin-bottom: 2rem;
 }
 
-.tech-section, .usecase-section, .testimonial-section, .team-section, .cta-section {
+.tech-section, .testimonial-section, .team-section, .cta-section {
     padding: 4rem 2rem;
     text-align: center;
     background-color: #f6faff;
@@ -638,38 +566,6 @@ html {
 .tech-highlights li {
     margin: 1rem 0;
     font-size: 1.1rem;
-}
-
-.usecase {
-    position: relative;
-    padding: 6rem 2rem;
-    color: rgb(253, 253, 253);
-    text-align: center;
-    z-index: 0;
-    overflow: hidden;
-    background: linear-gradient(135deg, #1e3c72, #2a5298)
-}
-
-.usecase-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* background: linear-gradient(135deg, #1e726c, #2a8b98); */
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.usecase-card {
-    background: #7d69e1;
-    border-radius: 10px;
-    padding: 2rem;
-    width: 280px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-}
-
-.usecase-card h3 {
-    margin-bottom: 1rem;
-    color: #74b4f1;
 }
 
 .testimonial-section blockquote {
@@ -795,7 +691,6 @@ html {
     overflow: visible !important;
     position: relative; /* ensure containing context */
   }
-  
 
   /* Customize slick dots */
 .slick-dots {
@@ -803,9 +698,6 @@ html {
     z-index: 10 !important;
     bottom: -30px !important;
     display: block !important;
-    /* border: 1px solid rgb(255, 255, 255); /* debug */
-    /* background-color: rgb(255, 255, 255); /* debug */
-    /* bottom: -30px !important; move further down if needed */
   }
 
   .slick-dots li button {
@@ -828,53 +720,91 @@ html {
   /* Optional: increase spacing between dots */
   .slick-dots li {
     margin: 0 10px !important;
+  } 
+
+  .usecase-section {
+    background: #003c71;
+    padding: 80px 20px;
   }
-  
 
-/* .why-love-section {
-    position: relative;
-    padding: 4rem 2rem;
-    color: rgb(253, 253, 253);
+  .usecase-section h2 {
     text-align: center;
-    z-index: 0;
-    overflow: hidden;
-    background: linear-gradient(135deg, #ff55ff, #2a5298);
-}
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    color: #fff;
+  }
 
-.why-love-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #d7f8b4;
-}
+  .usecase-container {
+    max-width: 760px;
+    width: 100%; 
+    margin: 0 auto;
+    justify-content: center;
+    padding-left: clamp(20px, 5vw, 60px);
+    padding-right: clamp(20px, 5vw, 60px);
+  }
 
-.why-love-grid {
+  .usecase-intro {
+    max-width: 1050px;
+    background: #003c71;
+    width: 100%;
+    /* padding: 24px 28px; */
+    border-radius: 10px;
+    margin: 0 auto 60px;
+    font-size: 1.1rem;
+    color: #ffffff;
+    line-height: 1.7;
+    justify-content: center;
+    text-align: justify;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  }
+
+  .usecase-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .usecase-item {
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
-}
-
-.why-card {
-    background: white;
-    padding: 2rem;
-    border-radius: 12px;
-    width: 280px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-    transition: transform 0.2s ease;
-}
-
-.why-card:hover {
-    transform: translateY(-5px);
-}
-
-.why-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
-    color: #1a3e72;
-}
-
-.why-card p {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #333;
-} */
+    gap: 20px;
+  }
+  
+  .usecase-card {
+    background: #016dcc;
+    border-radius: 16px;
+    padding: 30px 40px;
+    /* align-self: center; */
+    justify-content: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-width: 300px;
+    max-width: 400px;
+    flex: 1;
+  }
+  
+  .usecase-card h3 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .usecase-card h3 i {
+    font-size: 2.4rem;
+    color: #ffffff;
+  }
+  
+  .usecase-description {
+    flex: 2;
+    font-size: 1.1rem;
+    color: #ffffff;
+    line-height: 1.7;
+    text-align: justify;
+    padding: 16px;
+    max-width: 500px;
+  }  
