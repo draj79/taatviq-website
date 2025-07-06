@@ -2,7 +2,7 @@ const baseUrl = 'https://www.taatviqai.com/';
 
 const products = {
     spark: {
-        img: 'https://draj79.github.io/taatviq-website/assets/image/spark.png',
+        img: baseUrl + 'assets/image/spark.png',
         title: 'TaatvIQ Spark',
         desc: 'TaatvIQ Spark is the foundational offering in the TaatvIQ product suite, designed as an ' +
             'easy entry point for organizations beginning their data intelligence journey. It provides ' +
