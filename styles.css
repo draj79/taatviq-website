@@ -434,6 +434,19 @@ html {
     margin-bottom: 1rem;
 }
 
+.product-description h2 a {
+    color: black;
+    text-decoration: none;
+    cursor: default;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+  }
+
+.product-description h2 a:hover {
+    color: #0e838c;  /* or any accent color */
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
 .product-description p {
     padding: 1rem 1rem;
     font-size: 1.1rem;
