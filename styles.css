@@ -835,3 +835,35 @@ html {
     line-height: 1.2;
     text-align: justify;
 }
+
+  .site-footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 0.95rem;
+  }
+  
+  .footer-content {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .footer-links {
+    margin-top: 10px;
+  }
+  
+  .footer-links a {
+    color: #ffffff;
+    text-decoration: underline;
+    margin: 0 8px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #c0f0ef;
+  }
+  
+  .footer-links span {
+    color: #ffffff;
+  }  
