@@ -42,9 +42,15 @@ const products = {
 function showProduct(productKey, buttonElement = null) {
     const { img, title, desc } = products[productKey];
     const formattedDesc = desc.replace(/\n/g, '<br><br>');
+
+    // Conditionally embed link for Spark only
+    const titleHTML = productKey === 'spark'
+        ? `<a href="https://analytics.taatviqai.com/" target="_blank" rel="noopener">${title}</a>`
+        : title;
+    
     document.getElementById('product-img').src = img;
     document.getElementById('product-img').alt = title;
-    document.getElementById('product-desc').innerHTML = `<h2>${title}</h2><p>${formattedDesc}</p>`;
+    document.getElementById('product-desc').innerHTML = `<h2>${titleHTML}</h2><p>${formattedDesc}</p>`;
 
     // Update active button only if clicked from main buttons (not dropdown)
     document.querySelectorAll('.product-buttons button').forEach(btn => {
