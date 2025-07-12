@@ -577,7 +577,7 @@ html {
     margin-bottom: 2rem;
 }
 
-.tech-section, .testimonial-section, .team-section, .cta-section {
+.tech-section, .testimonial-section, .team-section {
     padding: 4rem 2rem;
     text-align: center;
     background-color: #f6faff;
@@ -642,9 +642,16 @@ html {
 }
 
 .cta-section {
-    background-color: #003c71;
-    color: white;
-    padding: 4rem 2rem;
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #003c71;
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .cta-section {
+    margin-top: 50px;
+  }
 }
 
 .cta-button {
