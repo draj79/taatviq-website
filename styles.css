@@ -454,6 +454,30 @@ html {
     margin-bottom: 1.2em; 
 }
 
+@media (max-width: 950px) {
+  .product-display {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-image img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .product-description {
+    max-width: 100%;
+    /* padding: 0 1rem; */
+  }
+
+  .product-description h2,
+  .product-description p {
+    text-align: justify;
+    /* padding: 0.5rem 1rem; */
+  }
+}
+
 .contact-section {
     background-color: #ffffff;
     text-align: center;
