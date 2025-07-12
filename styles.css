@@ -648,7 +648,7 @@ html {
   color: white;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .cta-section {
     margin-top: 50px;
   }
