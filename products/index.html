@@ -74,25 +74,18 @@
             </div>
 
             <div class="product-buttons">
-                <button data-product="spark" onclick="showProduct('spark')" class="active">TaatvIQ Spark</button>
-                <button data-product="vision" onclick="showProduct('vision')">TaatvIQ Vision</button>
-                <button data-product="quantum" onclick="showProduct('quantum')">TaatvIQ Quantum</button>
+                <button data-product="spark" onclick="showProduct('spark', this)" class="active">TaatvIQ Spark</button>
+                <button data-product="vision" onclick="showProduct('vision', this)">TaatvIQ Vision</button>
+                <button data-product="quantum" onclick="showProduct('quantum', this)">TaatvIQ Quantum</button>
             </div>
         
             <div class="product-display">
-                <div class="product-image">
-                    <img id="product-img" src="../assets/image/spark.png" alt="TaatvIQ Spark">
-                </div>
-                <div class="product-description" id="product-desc"> <!--  showcase -->
-                    <h2>TaatvIQ Spark</h2>
-                    <p>TaatvIQ Spark is the foundational offering in the TaatvIQ product suite, designed as an 
-                        easy entry point for organizations beginning their data intelligence journey. It provides 
-                        core capabilities for data ingestion, handling, management, and storage, enabling businesses 
-                        to establish a clean, scalable data pipeline with minimal friction.
-                        Spark includes an intuitive analytics layer that translates raw data into meaningful insights, 
-                        empowering businesses to identify inefficiencies, fix operational issues, and boost productivity. 
-                        With built-in alerting and reporting features, Spark ensures stakeholders are continuously informed 
-                        and ready to act on emerging trends or anomalies.</p>
+                <div class="product-description" id="product-desc"> 
+                    <h2 id="product-title">TaatvIQ Spark</h2>
+                    <div class="product-image">
+                        <img id="product-img" src="../assets/image/spark.png" alt="TaatvIQ Spark">
+                    </div>
+                    <div id="product-text-content"></div>
                 </div>
             </div>
         </section>
