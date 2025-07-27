@@ -58,11 +58,12 @@ const products = {
 function showProduct(productKey, buttonElement = null) {
     const { img, title, desc } = products[productKey];
     const formattedDesc = desc.replace(/\n/g, '<br><br>');
+    const titleHTML = title;
 
     // Conditionally embed link for Spark only
-    const titleHTML = productKey === 'spark'
-        ? `<a href="https://analytics.taatviqai.com/" target="_blank" rel="noopener">${title}</a>`
-        : title;
+    // const titleHTML = productKey === 'spark'
+    //     ? `<a href="https://analytics.taatviqai.com/" target="_blank" rel="noopener">${title}</a>`
+    //     : title;
 
     // Set title and image
     document.getElementById('product-title').innerHTML = titleHTML;
