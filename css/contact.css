@@ -1,0 +1,144 @@
+.cta-section {
+    position: relative;
+    padding: 10rem 2rem;
+    color: rgb(253, 253, 253);
+    background: linear-gradient(rgb(176, 176, 233), rgb(102, 97, 120), rgb(10,12,18));
+    text-align: center;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.cta-section h2 {
+    font-size: 20px;
+}
+
+.cta-section p {
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.cta-button {
+    /* #f4c542 */
+    background-color: var(--colour-primary); 
+    color: #fff;
+    opacity: 0.7;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 1.5rem;
+}
+
+.contact-section {
+    background: linear-gradient(rgb(10,12,18), rgb(102, 97, 120), rgb(176, 176, 233));
+    text-align: center;
+    padding: 6rem 1rem;
+    color: var(--colour-white);
+}
+
+.contact-section h2 {
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.contact-section a {
+    padding-top: 100px;
+    color: var(--colour-primary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
+
+.address {
+    padding: 50px 150px;
+}
+
+.address p {
+    font-size: 16px;
+}
+
+@media (min-width: 1100px) {
+    .contact-section {
+        padding: 6rem 9rem
+    }
+
+    .address p {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .address {
+        padding: 50px 70px;
+    }
+
+    .address p {
+        font-size: 0 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .cta-section {
+        padding: 5rem 2rem;
+    }
+    .cta-section h2 {
+        font-size: 16px;
+    }
+    
+    .cta-section p {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .contact-section h2 {
+        font-size: 18px;
+    }
+
+    .contact-section p {
+        font-size: 14px;
+    }
+
+    .contact-section p a {
+        font-size: 14px;
+    }
+
+    .address {
+        padding: 40px;
+    }
+
+    .address p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 300px) {
+    .contact-section h2 {
+        font-size: 16px;
+    }
+
+    .contact-section p {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .contact-section p a {
+        font-size: 12px;
+    }
+
+    .address {
+        padding: 30px 0;
+        font-size: 14px;
+    }
+
+    .address p {
+        font-size: 12px;
+    }
+
+    iframe {
+        display: none;
+    }
+}

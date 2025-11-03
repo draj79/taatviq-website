@@ -1,0 +1,252 @@
+.about-section {
+    position: relative;
+    /* background-color: #1a6f94; */
+    /* background: url('image3.png') no-repeat center center/cover; */
+    padding: 6rem 2rem;
+    color: rgb(253, 253, 253);
+    background: linear-gradient(rgb(10,12,18), rgb(102, 97, 120), rgb(176, 176, 233));
+    text-align: center;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.about-section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 1;
+}
+
+.about-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.about-content h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.why-love-section {
+    /* background: linear-gradient(135deg, #ff4668, #a646ff); */
+    background: linear-gradient(rgb(176, 176, 233), rgb(102, 97, 120), rgb(10,12,18));
+    /* background: #f9f9f9; */
+    padding: 80px 20px;
+    text-align: center;
+}
+  
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: white; /* #fbfb23 */
+    font-weight: bold;
+}
+  
+.why-slider {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+  
+.why-slide {
+    padding: 0 15px;
+}
+  
+.why-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 30px 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 350px;
+}
+  
+.why-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+  
+.why-card .icon {
+    font-size: 40px;
+    color: #007BFF;
+    margin-bottom: 16px;
+    animation: floatIcon 3s ease-in-out infinite;
+}
+  
+@keyframes floatIcon {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+  
+.why-card h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+  
+.why-card p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-top: 0;
+    flex-grow: 1; /* fills available vertical space */
+    text-align: justify;
+} 
+  
+.why-love-section, .why-slider {
+    overflow: visible !important;
+    position: relative; /* ensure containing context */
+}
+
+  /* Customize slick dots */
+.slick-dots {
+    position: relative !important;
+    z-index: 10 !important;
+    bottom: -30px !important;
+    display: block !important;
+}
+
+.slick-dots li button {
+    background: transparent !important;
+    border: none !important;
+    cursor: pointer !important;
+}
+  
+.slick-dots li button:before {
+    font-size: 16px !important;
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+  
+.slick-dots li.slick-active button:before {
+    color: #00bfff !important;
+    opacity: 1 !important;
+}
+  
+  /* Optional: increase spacing between dots */
+.slick-dots li {
+    margin: 0 10px !important;
+} 
+
+@media (max-width: 900px) {
+    .about-section {
+        padding: 12px;
+    }
+
+    .about-content {
+        max-width: 90%;
+        padding: 0;
+    }
+
+    .about-content h2 {
+        font-size: 18px;
+        margin-bottom: 1rem;
+    }
+    
+    .about-content p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 16px;
+    }
+  
+    .why-slider {
+        max-width: 900px;
+        padding: 14px;
+    }
+  
+    .why-slide {
+        padding: 0 12px;
+    }
+
+    .why-love-section {
+        padding: 12px 10px;
+    }
+      
+    .section-title {
+        font-size: 18px;
+        margin-bottom: 1rem;
+    }
+  
+    .why-card .icon {
+        font-size: 35px;
+    }
+  
+    .why-card h3 {
+        font-size: 18px;
+    }
+      
+    .why-card p {
+        font-size: 14px;
+    } 
+}
+
+@media (max-width: 400px) {
+    .about-section {
+        padding: 12px;
+    }
+
+    .about-content {
+        max-width: 90%;
+        padding: 0;
+    }
+
+    .about-content h2 {
+        font-size: 12px;
+    }
+    
+    .about-content p {
+        font-size: 10px;
+        margin-bottom: 12px;
+    }
+  
+    .why-slider {
+        padding: 10px;
+    }
+  
+    .why-slide {
+        padding: 0 12px;
+    }
+
+    .why-love-section {
+        padding: 12px;
+    }
+      
+    .section-title {
+        font-size: 12px;
+        margin-bottom: 1rem;
+    }
+  
+    .why-card .icon {
+        font-size: 30px;
+    }
+  
+    .why-card h3 {
+        font-size: 12px;
+    }
+      
+    .why-card p {
+        font-size: 10px;
+    } 
+  
+    .slick-dots li button:before {
+        font-size: 10px !important;
+    }
+    
+    .slick-dots {
+        bottom: -10px !important;
+    }
+    
+    
+    .slick-dots li {
+        margin: 0 8px !important;
+    } 
+}
