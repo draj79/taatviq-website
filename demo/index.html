@@ -4,77 +4,91 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>TaatvIQ</title>
-        <link rel="icon" type="image/png" href="../assets/image/favicon.png">
-        <link rel="stylesheet" href="../styles.css">
+        <link rel="shortcut icon" type="image/png" href="/assets/image/favicon.png">
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/demo.css">
         <!-- Slick Carousel CSS -->
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <!-- Slick Theme (Optional) -->
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
         <!-- Font Awesome for Icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <script src="../utils.js"></script>
+        <script src="/js/utils.js"></script>
     </head>
 
     <body>
         <!-- Navbar -->
-        <div class="navbar">
-            <!-- Logo -->
-            <div class="logo">
-                <a href="../index.html"><img src="../assets/image/taatviq_name_black.png" alt="Logo"></a>
-            </div>
-            <!-- Navigation links -->
-            <div class="nav-items">
-
-                <!-- Taatviq dropdown -->
-                <div class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">TaatvIQ</a>
-                    <div class="dropdown-content">
-                        <a href="../index.html?section=motivation">Motivation & Vision</a>
-                        <a href="../about/index.html?section=aboutus">About Us</a>
-                        <a href="../usecase/index.html?section=usecase">Use Cases</a>
-                    </div>
+        <nav>
+            <!-- <div class="container"> -->
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="/index.html"><img src="/assets/image/taatviq_name_black.png" alt="Logo"></a>
                 </div>
-
-                <!-- Single Product link with dropdown -->
-                <div class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">Products</a>
-                    <div class="dropdown-content">
-                        <a href="../products/index.html?product=spark&section=product-section">TaatvIQ Spark</a>
-                        <a href="../products/index.html?product=vision&section=product-section">TaatvIQ Vision</a>
-                        <a href="../products/index.html?product=quantum&section=product-section">TaatvIQ Quantum</a>
-                    </div>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
                 </div>
+                <!-- Navigation links -->
+                <ul class="nav-links">
+                    <!-- Taatviq dropdown -->
+                    <li>
+                        <a href="javascript:void(0)" >Home <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown">
+                            <ul>
+                                <li><a href="/index.html?section=vision">Vision</a></li>
+                                <li><a href="/index.html?section=motivation">Motivation</a></li>
+                                <li><a href="/about/index.html?section=aboutus">About Us</a></li>
+                                <li><a href="/usecase/index.html?section=usecase">Use Case</a></li>
+                                <!-- <li><a href="/team/index.html?section=team">Meet the Team</a></li> -->
+                            </ul>
+                        </div>
+                    </li>
 
-                <!-- Demo dropdown -->
-                <div class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">Demo</a>
-                    <div class="dropdown-content">
-                        <a href="../demo/index.html?section=analytics">Analytics</a>
-                    </div>
-                </div>
+                    <!-- Single Product link with dropdown -->
+                    <li>
+                        <a href="javascript:void(0)" >Products <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown">
+                            <ul>
+                                <li><a href="/products/index.html?product=spark&section=product-section">Spark</a></li>
+                                <li><a href="/products/index.html?product=vision&section=product-section">Vision</a></li>
+                                <li><a href="/products/index.html?product=quantum&section=product-section">Quantum</a></li>
+                            </ul>
+                        </div>
+                    </li>
 
-                <div class="dropdown">
-                    <a href="../contact/index.html?section=contact">Contact Us</a>
-                </div>
-            </div>
-        </div>       
+                    <!-- Demo dropdown -->
+                    <li>
+                        <a href="javascript:void(0)" >Demo <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown">
+                            <ul>
+                                <li><a href="/demo/index.html?section=analytics">Analytics</a>></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="nav-cta-button" href="/contact/index.html?section=contact" >Contact Us</a></li>
+                </ul>           
+            <!-- </div> -->
+        </nav>     
 
         <section id="analytics" class="demo-section">
-            <h2>Analytics Demo</h2>
-            <p>Watch the Demo video to understand how TaatvIQ empowers your business.</p>
-            <video controls width="100%" style="max-width: 800px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.2);">
-            <source src="../assets/video/demo1.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-            </video>
-        </section>
-        
-        <!-- Footer -->
+            <div class="demo-hdg">
+                <h2>Analytics Demo</h2>
+                <p>Watch the Demo video to understand how TaatvIQ empowers your business.</p>
+            </div>
+            <div class="demo-vid">
+                <video controls width="100%" style="max-width: 800px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.2);">
+                <source src="/assets/video/demo1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>   
+
         <footer class="site-footer">
             <div class="logo2">
-                <a href="../index.html"><img src="../assets/image/logo1.png" alt="Logo"></a>
-                <!-- img src="https://drive.google.com/uc?export=view&id=1PY2JzmiCUyBqIv1MYgSsz0_lHgj3d6LQ" alt="Logo" -->
+                <a href="/index.html"><img src="/assets/image/logo1.png" alt="Logo"></a>
             </div>
-            <hr style="width: 30%; border: none; height: 1.5px; background-color: #cccccc; margin: 25px auto;">
+            <hr style="width: 30%; border: none; height: 1.5px; background-color: #cccccc; ">
             <p>&copy; 2025 TaatvIQ AI Private Limited. All rights reserved.</p>
             <div class="footer-links">
                 <a href="/terms/index.html">Terms & Conditions</a> 
@@ -83,4 +97,5 @@
             </div>
         </footer>
     </body>
+    <script src="/js/navigation.js"></script>
 </html>
