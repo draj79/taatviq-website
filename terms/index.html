@@ -4,243 +4,296 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>TaatvIQ</title>
-        <link rel="icon" type="image/png" href="/assets/image/favicon.png">
-        <link rel="stylesheet" href="../styles.css">
+        <link rel="shortcut icon" type="image/png" href="/assets/image/favicon.png">
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/terms.css">
         <!-- Slick Carousel CSS -->
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <!-- Slick Theme (Optional) -->
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
         <!-- Font Awesome for Icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <script src="/utils.js"></script>
+        <script src="/js/utils.js"></script>
     </head>
 
     <body>
         <!-- Navbar -->
-        <div class="navbar">
-            <!-- Logo -->
-            <div class="logo">
-                <a href="/"><img src="/assets/image/taatviq_name_black.png" alt="Logo"></a>
-            </div>
-            <!-- Navigation links -->
-            <div class="nav-items">
-
-                <!-- Taatviq dropdown -->
-                <div class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">TaatvIQ</a>
-                    <div class="dropdown-content">
-                        <a href="/index.html?section=motivation">Motivation & Vision</a>
-                        <a href="/about/index.html?section=aboutus">About Us</a>
-                        <a href="/usecase/index.html?section=usecase">Use Case</a>
-                    </div>
+        <nav>
+            <!-- <div class="container"> -->
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="/index.html"><img src="/assets/image/taatviq_name_black.png" alt="Logo"></a>
                 </div>
-
-                <!-- Single Product link with dropdown -->
-                <div class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">Products</a>
-                    <div class="dropdown-content">
-                        <a href="/products/index.html?product=spark&section=product-section">TaatvIQ Spark</a>
-                        <a href="/products/index.html?product=vision&section=product-section">TaatvIQ Vision</a>
-                        <a href="/products/index.html?product=quantum&section=product-section">TaatvIQ Quantum</a>
-                    </div>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
                 </div>
+                <!-- Navigation links -->
+                <ul class="nav-links">
+                    <!-- Taatviq dropdown -->
+                    <li>
+                        <a href="javascript:void(0)" >Home <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown">
+                            <ul>
+                                <li><a href="/index.html?section=vision">Vision</a></li>
+                                <li><a href="/index.html?section=motivation">Motivation</a></li>
+                                <li><a href="/about/index.html?section=aboutus">About Us</a></li>
+                                <li><a href="/usecase/index.html?section=usecase">Use Case</a></li>
+                                <!-- <li><a href="/team/index.html?section=team">Meet the Team</a></li> -->
+                            </ul>
+                        </div>
+                    </li>
 
-                <!-- Demo dropdown -->
-                <div class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">Demo</a>
-                    <div class="dropdown-content">
-                        <a href="/demo/index.html?section=analytics">Analytics</a>
-                    </div>
-                </div>
+                    <!-- Single Product link with dropdown -->
+                    <li>
+                        <a href="javascript:void(0)" >Products <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown">
+                            <ul>
+                                <li><a href="/products/index.html?product=spark&section=product-section">Spark</a></li>
+                                <li><a href="/products/index.html?product=vision&section=product-section">Vision</a></li>
+                                <li><a href="/products/index.html?product=quantum&section=product-section">Quantum</a></li>
+                            </ul>
+                        </div>
+                    </li>
 
-                <div class="dropdown">
-                    <a href="../contact/index.html?section=contact">Contact Us</a>
-                </div>
-            </div>
-        </div>      
+                    <!-- Demo dropdown -->
+                    <li>
+                        <a href="javascript:void(0)" >Demo <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown">
+                            <ul>
+                                <li><a href="/demo/index.html?section=analytics">Analytics</a>></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="nav-cta-button" href="/contact/index.html?section=contact" >Contact Us</a></li>
+                </ul>           
+            <!-- </div> -->
+        </nav>     
 
         <section id="terms" class="terms-section">
             <div class="terms-content">
                 <h2>Terms & Conditions</h2>
-                <p><u>1. Acceptance of Terms</u></p>
-                <p>
-                    By accessing or using any services provided by Taatviq AI Private Limited ("Taatviq", "we", "our", or "us"), 
-                    including but not limited to data storage, data handling, data analytics, machine learning, and artificial 
-                    intelligence-based solutions (collectively, the "Services"), you ("you", "your", "Client", or "User") agree 
-                    to be bound by these Terms and Conditions ("Terms"). If you do not agree with any part of these Terms, 
-                    you must not access or use our Services.
-                </p>
+                <div class="terms">
+                    <h3>1. Acceptance of Terms</h3>
+                    <p>
+                        By accessing or using any services provided by Taatviq AI Private Limited ("Taatviq", "we", "our", or "us"), 
+                        including but not limited to data storage, data handling, data analytics, machine learning, and artificial 
+                        intelligence-based solutions (collectively, the "Services"), you ("you", "your", "Client", or "User") agree 
+                        to be bound by these Terms and Conditions ("Terms"). If you do not agree with any part of these Terms, 
+                        you must not access or use our Services.
+                    </p>
+                </div>
                 
-                <p><u>2. Services</u></p>
-                <p>
-                    Taatviq AI Private Limited provides enterprise-level solutions including but not limited to:<br>
-                    (i) Secure and scalable Data Storage<br>
-                    (ii) Advanced Data Handling and processing<br>
-                    (iii) Custom and off-the-shelf Data Analytics<br>
-                    (iv) AI/ML Model Development, Deployment, and Optimization<br>
-                    (v) Consulting Services in AI, ML, and Data Strategy<br>
-                    (vi) All services may be subject to specific service-level agreements (SLAs) and project-specific scopes 
-                    mutually agreed upon in writing.
-                </p>
+                <div class="terms">
+                    <h3>2. Services</h3>
+                    <p>
+                        Taatviq AI Private Limited provides enterprise-level solutions including but not limited to:<br>
+                        (i) Secure and scalable Data Storage<br>
+                        (ii) Advanced Data Handling and processing<br>
+                        (iii) Custom and off-the-shelf Data Analytics<br>
+                        (iv) AI/ML Model Development, Deployment, and Optimization<br>
+                        (v) Consulting Services in AI, ML, and Data Strategy<br>
+                        (vi) All services may be subject to specific service-level agreements (SLAs) and project-specific scopes 
+                        mutually agreed upon in writing.
+                    </p>
+                </div>
                 
-                <p><u>3. Eligibility</u></p>
-                <p>
-                    You must be of legal age to form a binding contract and authorized to act on behalf of the entity you represent. 
-                    By using our services, you confirm that:<br>
-                    (i) You are legally capable of entering into contracts.<br>
-                    (ii) You are authorized to share data and enter agreements on behalf of your organization.
-                </p>
+                <div class="terms">
+                    <h3>3. Eligibility</h3>
+                    <p>
+                        You must be of legal age to form a binding contract and authorized to act on behalf of the entity you represent. 
+                        By using our services, you confirm that:<br>
+                        (i) You are legally capable of entering into contracts.<br>
+                        (ii) You are authorized to share data and enter agreements on behalf of your organization.
+                    </p>
+                </div>
                 
-                <p><u>4. Data Ownership & Rights</u></p>
-                <p>
-                    (i) Client Data: You retain full ownership of any data you provide to Taatviq AI. 
-                    We do not claim any ownership over your proprietary data.<br>
-                    (ii) Derivative Data and Models: Taatviq may use anonymized or aggregated data derived from client 
-                    inputs for internal improvement and benchmarking purposes, unless otherwise contractually restricted.<br>
-                    (iii) Data Licensing: Clients must ensure they have the right to share the data with Taatviq and that 
-                    doing so does not violate any data protection or intellectual property laws.
-                </p>
+                <div class="terms">
+                    <h3>4. Data Ownership & Rights</h3>
+                    <p>
+                        (i) Client Data: You retain full ownership of any data you provide to Taatviq AI. 
+                        We do not claim any ownership over your proprietary data.<br>
+                        (ii) Derivative Data and Models: Taatviq may use anonymized or aggregated data derived from client 
+                        inputs for internal improvement and benchmarking purposes, unless otherwise contractually restricted.<br>
+                        (iii) Data Licensing: Clients must ensure they have the right to share the data with Taatviq and that 
+                        doing so does not violate any data protection or intellectual property laws.
+                    </p>
+                </div>
                 
-                <p><u>5. Data Storage & Security</u></p>
-                <p>
-                    Taatviq employs industry best practices for securing data including encryption, access controls, 
-                    and regular security audits. However:<br>
-                    (i) While we strive for robust protection, we do not guarantee absolute security. <br>
-                    (ii) You are responsible for maintaining the confidentiality of access credentials.<br>
-                    (iii) Clients may request on-premise or cloud-based data storage subject to mutually agreed terms.
-                </p>
+                <div class="terms">
+                    <h3>5. Data Storage & Security</h3>
+                    <p>
+                        Taatviq employs industry best practices for securing data including encryption, access controls, 
+                        and regular security audits. However:<br>
+                        (i) While we strive for robust protection, we do not guarantee absolute security. <br>
+                        (ii) You are responsible for maintaining the confidentiality of access credentials.<br>
+                        (iii) Clients may request on-premise or cloud-based data storage subject to mutually agreed terms.
+                    </p>
+                </div>
 
-                <p><u>6. Data Handling & Processing</u></p>
-                <p>
-                    Taatviq will handle your data strictly according to your instructions and applicable data protection 
-                    laws (including but not limited to GDPR, IT Act 2000 in India, etc.).<br>
-                    (i) Data will only be processed for agreed purposes.<br>
-                    (ii) We will not share client data with third parties without explicit consent unless legally required.<br>
-                    (iii) Data may be stored in geographically distributed servers, with clients notified of data residency 
-                    specifics when applicable.
-                </p>
+                <div class="terms">
+                    <h3>6. Data Handling & Processing</h3>
+                    <p>
+                        Taatviq will handle your data strictly according to your instructions and applicable data protection 
+                        laws (including but not limited to GDPR, IT Act 2000 in India, etc.).<br>
+                        (i) Data will only be processed for agreed purposes.<br>
+                        (ii) We will not share client data with third parties without explicit consent unless legally required.<br>
+                        (iii) Data may be stored in geographically distributed servers, with clients notified of data residency 
+                        specifics when applicable.
+                    </p>
+                </div>
                 
-                <p><u>7. Confidentiality</u></p>
-                <p>
-                    Both parties agree to maintain confidentiality of all sensitive or proprietary information exchanged 
-                    during the term of engagement. This includes:<br>
-                    (i) Trade secrets<br>
-                    (ii) Algorithms<br>
-                    (iii) Technical and business plans<br>
-                    (iv) Client-specific data and strategies<br>
-                    This obligation survives termination of the agreement.
-                </p>
+                <div class="terms">
+                    <h3>7. Confidentiality</h3>
+                    <p>
+                        Both parties agree to maintain confidentiality of all sensitive or proprietary information exchanged 
+                        during the term of engagement. This includes:<br>
+                        (i) Trade secrets<br>
+                        (ii) Algorithms<br>
+                        (iii) Technical and business plans<br>
+                        (iv) Client-specific data and strategies<br>
+                        This obligation survives termination of the agreement.
+                    </p>
+                </div>
                 
-                <p><u>8. Intellectual Property</u></p>
-                <p>
-                    Both parties agree to maintain confidentiality of all sensitive or proprietary information exchanged 
-                    during the term of engagement. This includes:<br>
-                    (i) Client IP: All intellectual property provided by the Client remains their property.<br>
-                    (ii) Taatviq IP: All proprietary tools, software, models, algorithms, and frameworks developed by 
-                    Taatviq remain our exclusive property unless otherwise agreed in writing.<br>
-                    (iii) Joint Developments: IP developed jointly will be governed by the terms of the project 
-                    contract or MOU.
-                </p>
+                <div class="terms">
+                    <h3>8. Intellectual Property</h3>
+                    <p>
+                        Both parties agree to maintain confidentiality of all sensitive or proprietary information exchanged 
+                        during the term of engagement. This includes:<br>
+                        (i) Client IP: All intellectual property provided by the Client remains their property.<br>
+                        (ii) Taatviq IP: All proprietary tools, software, models, algorithms, and frameworks developed by 
+                        Taatviq remain our exclusive property unless otherwise agreed in writing.<br>
+                        (iii) Joint Developments: IP developed jointly will be governed by the terms of the project 
+                        contract or MOU.
+                    </p>
+                </div>
                 
-                <p><u>9. Service Availability and SLA</u></p>
-                <p>
-                    While we strive for 99.9% uptime and responsiveness, services may be interrupted due to:
-                    (i) Planned maintenance<br>
-                    (ii) Unforeseen technical issues<br>
-                    (iii) Force majeure events<br>
-                    (iv) SLAs (if any) will be detailed in your service agreement.
-                </p>
+                <div class="terms">
+                    <h3>9. Service Availability and SLA</h3>
+                    <p>
+                        While we strive for 99.9% uptime and responsiveness, services may be interrupted due to:
+                        (i) Planned maintenance<br>
+                        (ii) Unforeseen technical issues<br>
+                        (iii) Force majeure events<br>
+                        (iv) SLAs (if any) will be detailed in your service agreement.
+                    </p>
+                </div>
                 
-                <p><u>10. Payments and Billing</u></p>
-                <p>
-                    (i) All invoices are payable as per the agreed billing cycle.<br>
-                    (ii) Late payments may incur interest as per the terms outlined in the invoice or agreement.<br>
-                    (iii) Taatviq reserves the right to suspend or terminate services in the event of non-payment.
-                </p>
+                <div class="terms">
+                    <h3>10. Payments and Billing</h3>
+                    <p>
+                        (i) All invoices are payable as per the agreed billing cycle.<br>
+                        (ii) Late payments may incur interest as per the terms outlined in the invoice or agreement.<br>
+                        (iii) Taatviq reserves the right to suspend or terminate services in the event of non-payment.
+                    </p>
+                </div>
                 
-                <p><u>11. Termination</u></p>
-                <p>
-                    Either party may terminate the agreement with written notice:<br>
-                    (i) By Client: With a minimum of [30] days’ notice.<br>
-                    (ii) By Taatviq: For breach of terms, non-payment, or misuse of services.<br><br>
-                    Upon termination:<br>
-                    (i) Taatviq will return or delete all client data as instructed.<br>
-                    (ii) Any outstanding dues must be cleared immediately.<br>
-                    (iii) Certain sections including Confidentiality, IP, and Limitation of Liability will survive termination.
-                </p>
+                <div class="terms">
+                    <h3>11. Termination</h3>
+                    <p>
+                        Either party may terminate the agreement with written notice:<br>
+                        (i) By Client: With a minimum of [30] days’ notice.<br>
+                        (ii) By Taatviq: For breach of terms, non-payment, or misuse of services.<br><br>
+                        Upon termination:<br>
+                        (i) Taatviq will return or delete all client data as instructed.<br>
+                        (ii) Any outstanding dues must be cleared immediately.<br>
+                        (iii) Certain sections including Confidentiality, IP, and Limitation of Liability will survive termination.
+                    </p>
+                </div>
                 
-                <p><u>12. Warranties and Disclaimers</u></p>
-                <p>
-                    Services are provided "as-is" and "as-available". Taatviq disclaims all implied warranties including 
-                    merchantability, fitness for a particular purpose, and non-infringement. We do not guarantee that our 
-                    solutions will be error-free or that results will always meet your expectations.
-                </p>
+                <div class="terms">
+                    <h3>12. Warranties and Disclaimers</h3>
+                    <p>
+                        Services are provided "as-is" and "as-available". Taatviq disclaims all implied warranties including 
+                        merchantability, fitness for a particular purpose, and non-infringement. We do not guarantee that our 
+                        solutions will be error-free or that results will always meet your expectations.
+                    </p>
+                </div>
                 
-                <p><u>13. Limitation of Liability</u></p>
-                <p>
-                    To the maximum extent permitted by applicable law: <br>
-                    (i) Taatviq shall not be liable for indirect, incidental, special, punitive, or consequential damages.<br>
-                    (ii) Total liability for direct damages shall not exceed the total amount paid by the Client in the past 
-                    six months for the relevant services.
-                </p>
+                <div class="terms">
+                    <h3>13. Limitation of Liability</h3>
+                    <p>
+                        To the maximum extent permitted by applicable law: <br>
+                        (i) Taatviq shall not be liable for indirect, incidental, special, punitive, or consequential damages.<br>
+                        (ii) Total liability for direct damages shall not exceed the total amount paid by the Client in the past 
+                        six months for the relevant services.
+                    </p>
+                </div>
                 
-                <p><u>14. Compliance with Laws</u></p>
-                <p>
-                    Each party agrees to comply with all applicable laws and regulations including: <br>
-                    (i) Data Protection Laws (GDPR, CCPA, etc.)<br>
-                    (ii) Export Control Laws<br>
-                    (iii) IT Act 2000 (India)<br>
-                    (iv) Any local data residency or processing laws
-                </p>
+                <div class="terms">
+                    <h3>14. Compliance with Laws</h3>
+                    <p>
+                        Each party agrees to comply with all applicable laws and regulations including: <br>
+                        (i) Data Protection Laws (GDPR, CCPA, etc.)<br>
+                        (ii) Export Control Laws<br>
+                        (iii) IT Act 2000 (India)<br>
+                        (iv) Any local data residency or processing laws
+                    </p>
+                </div>
                 
-                <p><u>15. Indemnification</u></p>
-                <p>
-                    You agree to indemnify and hold harmless Taatviq, its officers, directors, employees, and affiliates 
-                    from any claims or liabilities arising out of: <br>
-                    (i) Your misuse of our services<br>
-                    (ii) Violation of these Terms<br>
-                    (iii) Infringement of any third-party rights
-                </p>
+                <div class="terms">
+                    <h3>15. Indemnification</h3>
+                    <p>
+                        You agree to indemnify and hold harmless Taatviq, its officers, directors, employees, and affiliates 
+                        from any claims or liabilities arising out of: <br>
+                        (i) Your misuse of our services<br>
+                        (ii) Violation of these Terms<br>
+                        (iii) Infringement of any third-party rights
+                    </p>
+                </div>
                 
-                <p><u>16. Third-Party Tools and Services</u></p>
-                <p>
-                    Taatviq may use third-party software, APIs, or infrastructure. We do not control these services and 
-                    are not responsible for their availability, reliability, or legality.
-                </p>
+                <div class="terms">
+                    <h3>16. Third-Party Tools and Services</h3>
+                    <p>
+                        Taatviq may use third-party software, APIs, or infrastructure. We do not control these services and 
+                        are not responsible for their availability, reliability, or legality.
+                    </p>
+                </div>
                 
-                <p><u>17. Amendments</u></p>
-                <p>
-                    Taatviq reserves the right to modify these Terms at any time. Changes will be communicated via email 
-                    or website notice. Continued use after such updates constitutes acceptance.
-                </p>
+                <div class="terms">
+                    <h3>17. Amendments</h3>
+                    <p>
+                        Taatviq reserves the right to modify these Terms at any time. Changes will be communicated via email 
+                        or website notice. Continued use after such updates constitutes acceptance.
+                    </p>
+                </div>
                 
-                <p><u>18. Governing Law and Jurisdiction</u></p>
-                <p>
-                    These Terms are governed by the laws of India. Any disputes shall be subject to the exclusive 
-                    jurisdiction of the courts located in Pune, Maharashtra.
-                </p>
+                <div class="terms">
+                    <h3>18. Governing Law and Jurisdiction</h3>
+                    <p>
+                        These Terms are governed by the laws of India. Any disputes shall be subject to the exclusive 
+                        jurisdiction of the courts located in Pune, Maharashtra.
+                    </p>
+                </div>
                 
-                <p><u>19. Force Majeure</u></p>
-                <p>
-                    Taatviq shall not be liable for any failure or delay in performance due to causes beyond its reasonable 
-                    control, including but not limited to natural disasters, war, internet outages, or governmental actions.
-                </p>
+                <div class="terms">
+                    <h3>19. Force Majeure</h3>
+                    <p>
+                        Taatviq shall not be liable for any failure or delay in performance due to causes beyond its reasonable 
+                        control, including but not limited to natural disasters, war, internet outages, or governmental actions.
+                    </p>
+                </div>
                 
-                <p><u>20. Contact Us</u></p>
-                <p>
-                    If you have any questions or concerns about these Terms, please contact us.<br>
-                </p>
+                <div class="terms">
+                    <h3>20. Contact Us</h3>
+                    <p>
+                        If you have any questions or concerns about these Terms, please contact us.<br>
+                    </p>
+                </div>
                 
-                <p><u>By using our services, you acknowledge that you have read, understood, and agreed to these Terms and Conditions.</u></p>
+                <div class="terms">
+                    <p>By using our services, you acknowledge that you have read, understood, and agreed to these Terms and Conditions.</p>
+                </div>
             </div>
-        </section>
-        
-        <!-- Footer -->
+        </section>   
+
         <footer class="site-footer">
             <div class="logo2">
-                <a href="/"><img src="/assets/image/logo1.png" alt="Logo"></a>
+                <a href="/index.html"><img src="/assets/image/logo1.png" alt="Logo"></a>
             </div>
-            <hr style="width: 30%; border: none; height: 1.5px; background-color: #cccccc; margin: 25px auto;">
+            <hr style="width: 30%; border: none; height: 1.5px; background-color: #cccccc; ">
             <p>&copy; 2025 TaatvIQ AI Private Limited. All rights reserved.</p>
             <div class="footer-links">
                 <a href="/terms/index.html">Terms & Conditions</a> 
@@ -249,4 +302,5 @@
             </div>
         </footer>
     </body>
+    <script src="/js/navigation.js"></script>
 </html>
