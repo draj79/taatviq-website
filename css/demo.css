@@ -2,7 +2,7 @@
     position: relative;
     padding: 10rem 5rem;
     color: #fff;
-    background: var(--colour-black);
+    background: linear-gradient(rgb(0,0,0), rgb(176, 176, 233), rgb(10,12,18));
     text-align: center;
     z-index: 0;
     overflow: hidden;
