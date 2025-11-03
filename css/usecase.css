@@ -3,7 +3,7 @@
     position: relative;
     padding: 6rem 2rem;
     color: rgb(253, 253, 253);
-    background: linear-gradient(rgb(10,12,18), rgb(102, 97, 120), rgb(176, 176, 233));
+    background: linear-gradient(rgb(0,0,0), rgb(176, 176, 233), rgb(10,12,18));
     text-align: center;
     z-index: 0;
     overflow: hidden;
