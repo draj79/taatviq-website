@@ -3,66 +3,76 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <base href="https://www.taatviqai.com/">
         <title>TaatvIQ</title>
-        <link rel="icon" type="image/png" href="assets/image/favicon.png">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" type="image/png" href="/assets/image/favicon.png">
+        <link rel="stylesheet" href="/css/styles.css">
         <!-- Slick Carousel CSS -->
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <!-- Slick Theme (Optional) -->
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
         <!-- Font Awesome for Icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <script src="utils.js"></script>
+        <script src="/js/utils.js"></script>
     </head>
 
     <body>
         <!-- Navbar -->
-        <div class="navbar">
-            <!-- Logo -->
-            <div class="logo">
-                <a href="index.html"><img src="assets/image/taatviq_name_black.png" alt="Logo"></a>
-            </div>
-            <!-- Navigation links -->
-            <div class="nav-items">
-
-                <!-- Taatviq dropdown -->
-                <div class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">TaatvIQ</a>
-                    <div class="dropdown-content">
-                        <a href="index.html?section=motivation">Motivation & Vision</a>
-                        <a href="about/index.html?section=aboutus">About Us</a>
-                        <a href="usecase/index.html?section=usecase">Use Cases</a>
-                    </div>
+        <nav>
+            <!-- <div class="container"> -->
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="/index.html"><img src="/assets/image/taatviq_name_black.png" alt="Logo"></a>
                 </div>
-
-                <!-- Single Product link with dropdown -->
-                <div class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">Products</a>
-                    <div class="dropdown-content">
-                        <a href="products/index.html?product=spark&section=product-section">TaatvIQ Spark</a>
-                        <a href="products/index.html?product=vision&section=product-section">TaatvIQ Vision</a>
-                        <a href="products/index.html?product=quantum&section=product-section">TaatvIQ Quantum</a>
-                    </div>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
                 </div>
+                <!-- Navigation links -->
+                <ul class="nav-links">
+                    <!-- Taatviq dropdown -->
+                    <li>
+                        <a href="javascript:void(0)" >Home <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown">
+                            <ul>
+                                <li><a href="/index.html?section=vision">Vision</a></li>
+                                <li><a href="/index.html?section=motivation">Motivation</a></li>
+                                <li><a href="/about/index.html?section=aboutus">About Us</a></li>
+                                <li><a href="/usecase/index.html?section=usecase">Use Case</a></li>
+                                <!-- <li><a href="/team/index.html?section=team">Meet the Team</a></li> -->
+                            </ul>
+                        </div>
+                    </li>
 
-                <!-- Demo dropdown -->
-                <div class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">Demo</a>
-                    <div class="dropdown-content">
-                        <a href="demo/index.html?section=analytics">Analytics</a>
-                    </div>
-                </div>
+                    <!-- Single Product link with dropdown -->
+                    <li>
+                        <a href="javascript:void(0)" >Products <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown">
+                            <ul>
+                                <li><a href="/products/index.html?product=spark&section=product-section">Spark</a></li>
+                                <li><a href="/products/index.html?product=vision&section=product-section">Vision</a></li>
+                                <li><a href="/products/index.html?product=quantum&section=product-section">Quantum</a></li>
+                            </ul>
+                        </div>
+                    </li>
 
-                <div class="dropdown">
-                    <a href="contact/index.html?section=contact">Contact Us</a>
-                </div>
-            </div>
-        </div>  
+                    <!-- Demo dropdown -->
+                    <li>
+                        <a href="javascript:void(0)" >Demo <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown">
+                            <ul>
+                                <li><a href="/demo/index.html?section=analytics">Analytics</a>></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="nav-cta-button" href="/contact/index.html?section=contact" >Contact Us</a></li>
+                </ul>           
+            <!-- </div> -->
+        </nav> 
         
-        <section id="motivation"  class="vision-section">
+        <section id="vision"  class="vision-section">
             <video autoplay muted loop playsinline class="vision-bg">
-              <source src="assets/video/data_stream.mp4" type="video/mp4" />
+              <source src="/assets/video/data_stream.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             <div class="vision-overlay">
@@ -73,39 +83,36 @@
                 actionable insights through practical, adaptable AI.
               </p>
             </div>
-          </section>
-          
-        <section class="hero">
+        </section>
+
+        <section id="motivation" class="hero">
             <div class="hero-image">
-            <img src="assets/image/image1.png" alt="Hero Image">
+                <img src="/assets/image/image1.png" alt="Hero Image">
             </div>
             <div class="hero-text">
-            <h1>AI That Powers Smart Decisions</h1>
-            <p>At TaatvIQ, we turn data into action. Our AI solutions help businesses uncover insights, 
-                identify inefficiencies, reduce risks, and respond faster to change — all in real time. 
-                With TaatvIQ, you make smarter, more confident, and more impactful decisions.
-            </p>
+                <h1>AI That Powers Smart Decisions</h1>
+                <p>At TaatvIQ, we turn data into action. Our AI solutions help businesses uncover insights, 
+                    identify inefficiencies, reduce risks, and respond faster to change — all in real time. 
+                    With TaatvIQ, you make smarter, more confident, and more impactful decisions.
+                </p>
 
-            <p>
-                Whether you're navigating uncertainty, scaling operations, or streamlining processes, 
-                TaatvIQ delivers the intelligence needed to stay ahead. Our platform transforms raw data 
-                into clear, actionable insights using real-time processing, intelligent automation, 
-                and adaptable machine learning models.
-            </p>
+                <p>
+                    Whether you're navigating uncertainty, scaling operations, or streamlining processes, 
+                    TaatvIQ delivers the intelligence needed to stay ahead. Our platform transforms raw data 
+                    into clear, actionable insights using real-time processing, intelligent automation, 
+                    and adaptable machine learning models.
+                </p>
 
-            <p>
-                From frontline operations to strategic planning, TaatvIQ empowers every layer of your 
-                organization with decision intelligence — accelerating outcomes, enhancing productivity, 
-                and enabling continuous improvement.
-            </p>
+                <p>
+                    From frontline operations to strategic planning, TaatvIQ empowers every layer of your 
+                    organization with decision intelligence — accelerating outcomes, enhancing productivity, 
+                    and enabling continuous improvement.
+                </p>
             </div>
         </section>
 
         <section class="hero2">
-            <div class="hero2-image">
-            <img src="assets/image/image2.png" alt="Hero Image2">
-            </div>
-            <div class="hero2-text">
+            <div class="hero-text">
                 <h1>Empowering businesses</h1>
                 <p>
                     At TaatvIQ, we believe insights are only powerful when they lead to action. That’s why 
@@ -126,73 +133,16 @@
                     confidently.
                 </p>
             </div>
-        </section>        
-        
-        <!-- Technology Architecture -->
-        <!-- <section class="tech-section">
-            <h2>How TaatvIQ Works</h2>
-            <p>Our platform leverages real-time pipelines and AI for intelligent decision-making.</p>
-            <img src="architecture-placeholder.png" alt="Architecture Diagram" class="arch-image">
-            <ul class="tech-highlights">
-                <li><strong>Data Ingestion:</strong> High-throughput stream capture via Kafka & Vector.dev</li>
-                <li><strong>Processing:</strong> Real-time analytics using ClickHouse on cloud</li>
-                <li><strong>Insights:</strong> Superset & Grafana dashboards powered by AI models</li>
-            </ul>
-        </section> -->
-
-        <!-- Use Cases -->
-        <!-- <section class="usecase">
-            <h2>Use Cases</h2>
-            <div class="usecase-grid">
-                <div class="usecase-card">
-                    <h3>Retail Intelligence</h3>
-                    <p>Real-time alerts on sales, inventory, and footfall. Reduce stockouts and revenue loss.</p>
-                </div>
-                <div class="usecase-card">
-                    <h3>Financial Insights</h3>
-                    <p>AI assistant for P&L, Balance Sheets, working capital, and ratio analysis.</p>
-                </div>
-                <div class="usecase-card">
-                    <h3>Healthcare Analytics</h3>
-                    <p>Patient flow analysis, anomaly detection, and performance tracking dashboards.</p>
-                </div>
+            <div class="hero-image">
+                <img src="/assets/image/image2.png" alt="Hero Image2">
             </div>
-        </section> -->
+        </section>      
 
-        <!-- Testimonials -->
-        <!-- <section class="testimonial-section">
-            <h2>Customer Interest</h2>
-            <blockquote>
-                “TaatvIQ’s financial assistant helped us gain better clarity into working capital and profitability — instantly.”<br>
-                <span>- CFO, Mid-size Manufacturing Co.</span>
-            </blockquote>
-        </section> -->
-
-        <!-- Meet the Team -->
-        <!-- <section class="team-section">
-            <h2>Meet the Team</h2>
-            <div class="team-grid">
-                <div class="team-member">
-                    <h3>Divyanshu Raj</h3>
-                    <p>Senior Principal Engineer & Data Leader, ex-Quvia. Leads platform design and architecture.</p>
-                </div>
-                <div class="team-member">
-                    <h3>Praveen</h3>
-                    <p>ML/AI Specialist. Drives AI model development, optimization and experimentation.</p>
-                </div>
-                <div class="team-member">
-                    <h3>Pallavi</h3>
-                    <p>Digital Marketing Strategist. Focused on product positioning and market penetration.</p>
-                </div>
-            </div>
-        </section> -->
-        
-        <!-- Footer -->
         <footer class="site-footer">
             <div class="logo2">
-                <a href="index.html"><img src="assets/image/logo1.png" alt="Logo"></a>
+                <a href="/index.html"><img src="/assets/image/logo1.png" alt="Logo"></a>
             </div>
-            <hr style="width: 30%; border: none; height: 1.5px; background-color: #cccccc; margin: 25px auto;">
+            <hr style="width: 30%; border: none; height: 1.5px; background-color: #cccccc; ">
             <p>&copy; 2025 TaatvIQ AI Private Limited. All rights reserved.</p>
             <div class="footer-links">
                 <a href="/terms/index.html">Terms & Conditions</a> 
@@ -201,5 +151,5 @@
             </div>
         </footer>
     </body>
-
+    <script src="/js/navigation.js"></script>
 </html>
