@@ -414,8 +414,21 @@ hr {
         flex-wrap: wrap;
     }
 
+    .nav-links.nav-open {
+        display: block;
+    }
+
     .nav-links li {
         flex-basis: 100%;
+    }
+    
+    /* Ensure sub-menu items also stack */
+    .nav-links .dropdown li {
+        display: block;
+    }
+  
+    .nav-links li.dropdown-open .dropdown {
+        display: block;
     }
 
     .nav-links a {
